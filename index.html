@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,40 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-slate-50">
-    <div class="flex flex-col">
+    <div class="flex flex-col"> 
+        <!-- NAVIGATION BAR    -->
         <div class="absolute w-full h-20 border border-inherit shadow-md order-1 bg-white" id="rectangle1">
             <nav>
+                <!-- TITLE -->
                 <div class="flex flex-row items-center gap-4  h-9 w-52 absolute ml-10" id="frame365">
                     <img class="w-11 h-11 order-1" id="logo" src="Logo.svg" alt="" srcset="">
-                    <p class="w-36 h-5  font-sans not-italic font-extrabold text-3xl order-2 ml-4 mb-3.5 mr-44">Movies</p>
-                    
+                    <p class="w-36 h-5  font-sans not-italic font-extrabold text-3xl order-2 ml-4 mb-3.5 mr-44">Movies
+                    </p>
+
                     <img class="order-3 w-9 h-14 mt-1 " id="line1" src="Line 2.svg" alt="" srcset="">
-    
+
                 </div>
+                <!-- SEARCH BAR -->
                 <div class="flex flex-row justify-end items-center gap-4  h-9 mt-5 mr-48" id="frame364">
                     <img class="w-9 h-14 mt-1 order-1" id="line2" src="Line 2.svg" alt="" srcset="">
                     <img class="order-2" id="search" src="search.svg" alt="" srcset="">
                     <div class="order-3 text-2xl text-slate-500" id="quick">
                         <form class="form-inline">
-                            <input class="form-control h-12 pl-4 " id="searchTxt" type="search" placeholder="  Quick Search" aria-label="Search">
+                            <input class="form-control h-12 pl-4 " id="searchTxt" type="search"
+                                placeholder="  Quick Search" aria-label="Search">
                         </form>
                     </div>
                 </div>
-                
+
             </nav>
         </div>
+        <!-- MAIN BODY -->
         <div class="flex flex-row order-2 mt-20">
-            <div class=" flex flex-col gap-8 order-1 mr-16 bg-slate-100  border pl-28 pt-20 border-r-gray-300 text-2xl font-semibold" style="height: full; width: 28.15rem;">
+            <!-- LEFT COLUMN -->
+            <div class=" flex flex-col gap-8 order-1 mr-16 bg-slate-100  border pl-28 pt-20 border-r-gray-300 text-2xl font-semibold"
+                style="height: full; width: 26.1rem;">
                 <div class="bg-white py-4 pl-8">Search Results</div>
                 <div class="pl-8">All Team</div>
                 <div class="pl-8">Core</div>
@@ -42,12 +52,15 @@
 
                 <div class="mt-72 ml-8 text-white bg-black p-4 rounded-lg w-48 flex justify-center">+ Add</div>
             </div>
-            <div id="grid" class=" flex flex-wrap justify-center grid grid-cols-1 gap-x-12  sm:grid-cols-2 sm:gap-y-4  md:grid-cols-3  order-2 mx-auto my-16  ">
+            <!-- CARD FOR MOVIE -->
+            <div id="grid"
+                class=" flex flex-wrap justify-center grid grid-cols-1 gap-x-12  md:grid-cols-2 md:gap-y-4  lg:grid-cols-3  order-2 mx-auto my-16  ">
 
             </div>
-            
+
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
